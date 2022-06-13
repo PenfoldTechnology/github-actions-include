@@ -2,10 +2,8 @@
 
 > Simple but effective partials system for GitHub Actions
 
-## What it does
-
-Compiles GitHub Actions workflows with "partials", ie. partial workflow YAML
-configuration, using an `#!include(partial_name)` directive.
+Adds support for "partials" to GitHub Actions workflows. A partial can be a step, job, or any part
+of a workflow's YAML configuration. Include partials using the `#!include(partial_name)` directive.
 
 ## Example
 
