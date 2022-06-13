@@ -1,7 +1,7 @@
 {
   "name": "@penfold/github-actions-include",
   "author": "Penfold <hello@getpenfold.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "bin": {

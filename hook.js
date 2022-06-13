@@ -7,11 +7,12 @@ const flags = yargs(process.argv).options({
   partialsDir: {
     description: "Path to partials",
     type: "string",
+    default: "github/partials",
   },
   workflowsDir: {
-    demandOption: true,
     description: "Path to workflows (must not be .github/workflows)",
     type: "string",
+    default: "github/workflows",
   },
   includeWarningReadme: {
     description: "Include warning README.md in .github/workflows",
