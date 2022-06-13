@@ -1,4 +1,4 @@
-# github-actions-include
+# @penfold/github-actions-include
 
 > Simple but effective partials system for GitHub Actions
 
