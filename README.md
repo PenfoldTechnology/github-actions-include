@@ -111,6 +111,21 @@ Default: `true`
 Whether to include a warning README in `.github/workflows` that tells developers not to make
 changes in that folder, but in the folder specified by `workflowsDir`.
 
+## Partials
+
+A partial file consists of part of a GitHub Actions workflow configuration. It can be anything from a step, job, single
+line, whatever you like. The library is only performing an interpolation of the contents of a partial file, it enforces
+no rules on what a partial contain.
+
+Partial files should be named like this: `partial_name.yml`
+
+To include a partial in your workflow, use the `#!include()` directive.
+
+The include directive accepts one argument only, the name of a partial file. You can ommit the `.yml` file extension from the name.
+
+The include directive is indent-sensitive, meaning the partial contents for an include will be placed at the same level of indentation as
+the include directive.
+
 ## License
 
 Create by [Penfold](https://getpenfold.com) and released under the MIT license.
