@@ -42,11 +42,6 @@ jobs:
         # ...
 ```
 
-
-## Requirements
-
-- Husky: https://github.com/typicode/husky
-
 ## Install
 
 NPM:
@@ -87,6 +82,35 @@ githubActionsInclude({
   includeWarningReadme: true,
 });
 ```
+
+## Usage with Husky
+
+(Husky: https://github.com/typicode/husky)
+
+Add an npm script to your project:
+
+```
+"gh:actions:prepare": "gh-actions-include"
+```
+
+
+Add a pre-commit hook to your project:
+
+```
+$ git add .husky/pre-commit
+```
+
+Then update the hook file:
+
+```
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn gh:actions:prepare # <-- add this line
+```
+
+That's it! When you commit, your GH Actions workflows will be compiled with
+`github-actions-include`, when any workflow files in `workflowsDir` change.
 
 ## Options
 
