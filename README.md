@@ -106,7 +106,8 @@ Then update the hook file:
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn gh:actions:prepare # <-- add this line
+yarn gh:actions:prepare    # <-- add this line for yarn
+npm run gh:actions:prepare # <-- add this line for npm
 ```
 
 That's it! When you commit, your GH Actions workflows will be compiled with
