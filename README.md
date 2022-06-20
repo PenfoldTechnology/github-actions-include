@@ -152,6 +152,8 @@ from the name.
 The include directive is indent-sensitive, meaning the partial contents for an include will be placed at the same level 
 of indentation as the include directive.
 
+Partial files can use the include directive.
+
 ## License
 
 Create by [Penfold](https://getpenfold.com) and released under the MIT license.
